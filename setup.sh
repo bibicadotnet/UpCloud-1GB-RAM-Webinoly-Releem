@@ -2,6 +2,10 @@
 # setup Webinoly php 7.4
 sudo wget --no-check-certificate https://raw.githubusercontent.com/bibicadotnet/Webinoly-Optimization/master/webinoly74.sh -O webinoly_mod.sh && sudo chmod +x webinoly_mod.sh && sudo ./webinoly_mod.sh
 
+# setup mysql
+sudo wget --no-check-certificate https://raw.githubusercontent.com/bibicadotnet/VPS-1GB-RAM-Webinoly-Releem/main/mysql_1G_ram.conf -O /etc/mysql/my.cnf
+sudo service mysql restart
+
 # setup wp-cli
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 php wp-cli.phar --info
