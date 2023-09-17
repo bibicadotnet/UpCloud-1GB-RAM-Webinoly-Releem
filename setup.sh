@@ -31,6 +31,8 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 # setup rclone
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
+sudo webinoly -cache-valid=[10y,1w,5m]
+
 # setup wordpress bibica.net and off httpauth
 sudo site bibica.net -wp
 sudo httpauth bibica.net -wp-admin=off
